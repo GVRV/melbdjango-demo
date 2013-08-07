@@ -6,7 +6,7 @@ def readme():
         return f.read()
 
 setup(name='melbdjango-joke',
-      version='0.1',
+      version='0.2',
       description='Lulz',
       long_description=readme(),
       classifiers = [
