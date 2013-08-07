@@ -25,4 +25,10 @@ setup(name='melbdjango-joke',
       ],
       zip_safe=False,
       test_suite='nose.collector',
-      tests_require=['nose'])
+      tests_require=['nose'],
+      scripts=['bin/stupid-script'],
+      entry_points={
+          'console_scripts': [
+              'say-the-joke = thejoke.teller:tell'
+          ]
+      })
