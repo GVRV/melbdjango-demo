@@ -1,4 +1,5 @@
 from setuptools import setup
+import multiprocessing
 
 def readme():
     with open('README.rst') as f:
@@ -22,4 +23,6 @@ setup(name='melbdjango-joke',
       install_requires=[
           'sh'
       ],
-      zip_safe=False)
+      zip_safe=False,
+      test_suite='nose.collector',
+      tests_require=['nose'])
