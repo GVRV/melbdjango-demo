@@ -8,4 +8,7 @@ setup(name='melbdjango-joke',
       author_email='gaurav@dadhania.in',
       license='MIT',
       packages=['thejoke'],
+      install_requires=[
+          'sh'
+      ],
       zip_safe=False)
